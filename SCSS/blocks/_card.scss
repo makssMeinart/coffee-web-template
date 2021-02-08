@@ -1,0 +1,165 @@
+.card {
+   max-width: 884px;
+   background-color: white;
+   z-index: 5;
+}
+
+.card-item {
+   display: flex;
+}
+
+.card-item__left {
+   display: none;
+   justify-items: flex-start;
+   padding-top: 50px;
+   padding-right: 45px;
+   box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+}
+
+.card-item__left.active {
+   display: flex;
+   animation-name: cardDrop;
+   animation-duration: 1000ms;
+
+}
+
+@keyframes cardDrop {
+   0% {
+      transform: rotate(0);
+      opacity: 0;
+   }
+   10% {
+      transform: rotate(5deg);
+   }
+   20% {
+      transform: rotate(0);
+      opacity: .7;
+   }
+   
+}
+
+.card-item__img {
+   margin-left: -260px;
+   margin-right: 80px;
+}
+
+.card-item__content {
+   display: flex;
+   flex-direction: column;
+   max-width: 430px;
+
+   &-price {
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      color: $accent-color;
+      margin: 0;
+      margin-bottom: 6px;
+   }
+
+   &-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      color: $dark-gray-color;
+      margin: 0;
+      margin-bottom: 10px;
+   }
+
+   &-body {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      color: #151D28;
+      margin: 0;
+      margin-bottom: 24px;
+   }
+
+   &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 53px;
+
+      &-item {
+         display: flex;
+      }
+   }
+}
+
+
+
+.card-item__content-info-item-icon {
+   margin-right: 16px;
+   display: flex;
+}
+
+.card-item__content-info-item-title {
+   margin: 0;
+   padding-bottom: 4px;
+   font-weight: 300;
+   font-size: 1rem;
+   line-height: 1.375rem;
+}
+
+.card-item__content-info-item-subtitle {
+   font-weight: 600;
+   font-size: 1rem;
+   line-height: 1.375rem;
+   margin: 0;
+}
+
+.card-item__content-btns {
+   display: flex;
+   justify-content: space-between;
+
+   .primary-btn {
+      padding: 8px 32px;
+   }
+
+   .secondary-btn {
+      padding: 8px 62px;
+   }
+}
+
+
+
+
+// Right Side
+
+.card-item__btns {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.card-item__btn {
+   height: 33.3333333333%;
+   width: 88px;
+   opacity: .3;
+   transition: .2s linear opacity;
+
+   button {
+      cursor: pointer;
+      background-color: #EDF0F5;
+      text-align: center;
+      border: none;
+      font-weight: 900;
+      font-size: 1.875rem;
+      line-height: 2.125rem;
+      color: $primary-color;
+      height: 100%;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+   }
+}
+
+.card-item__btn.active {
+   opacity: 1;
+   box-shadow: 0px 3px 3px rgba(205, 205, 205, 0.4);
+   z-index: 5;
+
+   button {
+      background: white;
+
+   }
+}

@@ -1,0 +1,39 @@
+.subtitle {
+   line-height: 2.125rem;
+   font-size: 1.875rem;
+   font-weight: 900;
+   color: $primary-color;
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+}
+
+.title {
+   color: $primary-color;
+   font-size: 1.25rem;
+   line-height: 1.5rem;
+   font-weight: 600;
+   text-align: center;
+   padding-top: 5.4375rem;
+}
+
+
+.header-title {
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 1.25rem;
+   line-height: 1.5rem;
+}
+
+.primary-bnt {
+   background-color: $accent-color;
+   padding: 0.5rem 0.9375rem;
+   border-radius: 1.1875rem;
+}
+
+.basic-body {
+   font-size: 1rem;
+   font-weight: 300;
+   line-height: 1.3125rem;
+   color: $dark-gray-color;
+}

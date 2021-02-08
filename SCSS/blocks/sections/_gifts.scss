@@ -1,0 +1,26 @@
+.gifts {
+   position: relative;
+   background-color: $light-gray-color;
+   padding-bottom: 7.875rem;
+
+   .subtitle {
+      margin-bottom: 60px;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 20.375rem;
+      right: 0;
+      top: 0;
+      background-color:  #F9FBFF;
+      z-index: 0;
+   }
+}
+
+.gifts__wrapper {
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 150px;
+}
